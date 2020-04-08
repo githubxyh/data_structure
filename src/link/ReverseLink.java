@@ -21,8 +21,21 @@ public class ReverseLink {
         sl.header = current;
     }
 
-    //链表不动+逆序打印
-    public void reverse2(SingleLink sl){
+    //递归反转
+    private static Node reverseList(Node node){
+        if(node == null || node.next == null){
+            return node;
+        }
+        //链表最后
+        Node prev = reverseList(node.next);
+        node.next.next = node;
+        node.next = null;
+        return prev;
+    }
 
+    //递归反转
+    public void reverse2(SingleLink sl){
+        Node head = sl.header;
+        sl.header = reverseList(head);
     }
 }
