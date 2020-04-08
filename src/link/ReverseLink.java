@@ -7,9 +7,18 @@ package link;
  */
 public class ReverseLink {
 
-    //链表反转+顺序
+    //链表反转+循环
     public void reverse1(SingleLink sl){
-
+        Node head = sl.header;
+        Node prev = null;
+        Node current = null;
+        while(head != null) {
+            current = head;
+            head = head.next;
+            current.next = prev;
+            prev = current;
+        }
+        sl.header = current;
     }
 
     //链表不动+逆序打印
