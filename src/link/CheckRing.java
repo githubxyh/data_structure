@@ -21,7 +21,6 @@ public class CheckRing {
         Node node7 = new Node(7);
         Node node8 = new Node(8);
         Node node9 = new Node(9);
-
         head.next = node2;
         node2.next = node3;
         node3.next = node4;
@@ -42,11 +41,9 @@ public class CheckRing {
 
         Node p = head;//正常指针
         Node fasterP = head;//快慢指针
-
         while (p != null && fasterP != null) {
             p = p.next;
             fasterP = fasterP.next.next;
-
             if (fasterP == null){
                 return false;
             }

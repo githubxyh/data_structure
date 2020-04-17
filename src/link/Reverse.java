@@ -14,7 +14,6 @@ public class Reverse {
         sl.add(3);
         sl.add(4);
         sl.add(5);
-        //sl.printAll();
         Reverse r = new Reverse();
         r.reverse2(sl);
         sl.printAll();
