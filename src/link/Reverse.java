@@ -5,7 +5,20 @@ package link;
  * 1.链表反转+顺序
  * 2.链表不动+逆序打印
  */
-public class ReverseLink {
+public class Reverse {
+
+    public void testLink(){
+        SingleLink sl = new SingleLink();
+        sl.add(1);
+        sl.add(2);
+        sl.add(3);
+        sl.add(4);
+        sl.add(5);
+        //sl.printAll();
+        Reverse r = new Reverse();
+        r.reverse2(sl);
+        sl.printAll();
+    }
 
     //链表反转+循环
     public void reverse1(SingleLink sl){
