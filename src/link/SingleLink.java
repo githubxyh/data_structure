@@ -17,6 +17,10 @@ public class SingleLink {
     }
 
     public void printAll(){
+        printAll(this.header);
+    }
+
+    public static void printAll(Node header){
         if(header == null){
             return;
         }
