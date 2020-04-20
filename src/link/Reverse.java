@@ -20,6 +20,9 @@ public class Reverse {
     }
 
     //链表反转+循环
+    //1234
+    //2134
+    //4321
     public void reverse1(SingleLink sl){
         Node head = sl.header;
         Node prev = null;
