@@ -1,12 +1,13 @@
 package link;
 
 /**
- * 合并两个有序链表
+ * 合并两个有序链表:每次都找到两个链表头的最小值作为新链表的next
  */
 public class MergeSortLink {
 
     public void testMerge() {
         SingleLink sl = new SingleLink();
+        sl.add(2);
         sl.add(2);
         sl.add(3);
         sl.add(5);

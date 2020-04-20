@@ -11,7 +11,14 @@ public class Main {
         //cr.testCheckRing();
 
         //两个有序链表的合并
-        MergeSortLink ms = new MergeSortLink();
-        ms.testMerge();
+        //MergeSortLink ms = new MergeSortLink();
+        //ms.testMerge();
+
+        //删除链表的中间元素
+        //DeleteNode dn = new DeleteNode();
+        //dn.testDel();
+
+        FindMiddleNode fn = new FindMiddleNode();
+        fn.testFind();
     }
 }
