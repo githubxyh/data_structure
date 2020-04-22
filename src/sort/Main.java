@@ -14,8 +14,17 @@ public class Main {
         //ss.sort(arr);
 
         //插入排序
-        InsertionSort is = new InsertionSort();
-        is.sort(arr);
+        //InsertionSort is = new InsertionSort();
+        //is.sort(arr);
+
+        //归并排序
+        MergeSort ms = new MergeSort();
+        ms.sort(arr);
+
+        //快速排序
+        QuickSort qs = new QuickSort();
+        qs.sort(arr);
+
         printAll(arr);
 
     }
