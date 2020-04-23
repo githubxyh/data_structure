@@ -6,7 +6,10 @@ package sort;
 public class CountSort {
 
     public void sort(int arr[]) {
-        int max = 0;
+        if(arr.length == 0){
+            return;
+        }
+        int max = arr[0];
         //找到数组最大值
         for(int v : arr) {
             if(v > max) {

@@ -33,6 +33,10 @@ public class Main {
         //RadixSort rs = new RadixSort();
         //rs.sort(arr);
 
+        //桶排序
+        BucketSort bs = new BucketSort();
+        bs.sort(arr,2);
+
         printAll(arr);
 
     }

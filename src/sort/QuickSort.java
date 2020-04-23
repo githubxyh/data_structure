@@ -7,17 +7,17 @@ package sort;
 public class QuickSort {
 
     public void sort(int[] arr) {
-        qsort(arr, 0, arr.length - 1);
+        sort(arr, 0, arr.length - 1);
     }
 
-    private void qsort(int[] arr, int start, int end) {
+    public void sort(int[] arr, int start, int end) {
         if (start < end) {
             //将数组分为两部分
             int pivot = partition(arr, start, end);
             //递归排序左子数组
-            qsort(arr, start, pivot - 1);
+            sort(arr, start, pivot - 1);
             //递归排序右子数组
-            qsort(arr, pivot + 1, end);
+            sort(arr, pivot + 1, end);
         }
     }
 
