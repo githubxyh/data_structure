@@ -1,7 +1,8 @@
 package sort;
 
 /**
- * 快速排序：找到一个基准值，然后比基准值小的放左边；比基准值大的放右边。
+ * 快速排序：
+ * 找到一个基准值，然后比基准值小的放左边；比基准值大的放右边。
  * 先将数组进行分割，分割之后再组合。递归进行。
  */
 public class QuickSort {
@@ -21,6 +22,13 @@ public class QuickSort {
         }
     }
 
+    /**
+     * 基准值左边的都比基准值小，右边的都比基准值大
+     * @param arr
+     * @param start
+     * @param end
+     * @return
+     */
     private int partition(int[] arr, int start, int end) {
         //基准值
         int pivot = arr[start];
