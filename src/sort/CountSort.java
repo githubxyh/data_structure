@@ -40,6 +40,11 @@ public class CountSort {
         }
     }
 
+    /**
+     * 辅助基数排序用的基数排序
+     * @param arr
+     * @param digit:元素的位（个位|十位|百位...）
+     */
     public void sort(int arr[], int digit) {
         int max = 0;
         //找到数组最大值
