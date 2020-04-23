@@ -1,7 +1,7 @@
 package sort;
 
 /**
- * 插入排序：
+ * 插入排序：将一个数据插入到已经排好序的有序表中。
  */
 public class InsertionSort {
 

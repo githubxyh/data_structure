@@ -3,7 +3,7 @@ package sort;
 public class Main {
 
     public static void main(String[] args) {
-        int arr[] = {5,1,47,2,3,8};
+        int arr[] = {2,2,5,1,3,3,3,4,6};
 
         //冒泡
         //BubbleSort bs = new BubbleSort();
@@ -18,12 +18,20 @@ public class Main {
         //is.sort(arr);
 
         //归并排序
-        MergeSort ms = new MergeSort();
-        ms.sort(arr);
+        //MergeSort ms = new MergeSort();
+        //ms.sort(arr);
 
         //快速排序
-        QuickSort qs = new QuickSort();
-        qs.sort(arr);
+        //QuickSort qs = new QuickSort();
+        //qs.sort(arr);
+
+        //计数排序
+        //CountSort cs = new CountSort();
+        //cs.sort(arr);
+
+        //计数排序
+        //RadixSort rs = new RadixSort();
+        //rs.sort(arr);
 
         printAll(arr);
 

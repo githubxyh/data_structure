@@ -1,7 +1,7 @@
 package sort;
 
 /**
- * 归并排序
+ * 归并排序：将大数组拆分成多个小数组，然后将小数组进行排序后，再组装成大数组。
  */
 public class MergeSort {
 
