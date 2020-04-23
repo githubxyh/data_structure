@@ -45,7 +45,7 @@ public class BucketSort {
             }
         }
     }
-
+    //自动扩容
     private static void ensureCapacity(int[][] buckets, int bucketIndex) {
         int[] tempArr = buckets[bucketIndex];
         int[] newArr = new int[tempArr.length * 2];
