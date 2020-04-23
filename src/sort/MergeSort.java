@@ -1,7 +1,7 @@
 package sort;
 
 /**
- * 归并排序：将大数组拆分成多个小数组，然后将小数组进行排序后，再组装成大数组。
+ * 归并排序：将大数组拆分成多个小数组，然后将小数组进行排序后，再组装成大数组。重点用递归
  */
 public class MergeSort {
 
@@ -19,6 +19,13 @@ public class MergeSort {
         merge(arr, L, mid, R);
     }
 
+    /**
+     * 将两个小数组合并成大数组
+     * @param arr
+     * @param L
+     * @param mid
+     * @param R
+     */
     public void merge(int[] arr, int L, int mid, int R) {
         int[] temp = new int[R - L + 1];
         int i = 0;
