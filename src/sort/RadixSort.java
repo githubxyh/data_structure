@@ -1,7 +1,7 @@
 package sort;
 
 /**
- * 基数排序
+ * 基数排序：将数组中的数，按照个位、十位、百位...等排序
  */
 public class RadixSort {
 
