@@ -6,7 +6,6 @@ package search;
  * （对于法分为较小的数组查找，直接顺序遍历即。二分查找更适合处理静态数据，也就是没有频繁的数据插入、删除操作。）
  */
 public class MyBinarySearch {
-
     //自己实现方法,有诸多不足
     public int getIndex(int [] arr, int value) {
         int min = 0;
