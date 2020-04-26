@@ -1,7 +1,6 @@
 package search;
 
 public class BinarySearch {
-
     /**
      * 获取数组中指定元素的索引值，出现重复元素时返回第一个出现的索引位置。
      * @param arr
