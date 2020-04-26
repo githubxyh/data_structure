@@ -1,7 +1,7 @@
 package search;
 
 /**
- * introduction里面提到的整数与IP互转
+ * 整数与IP互转
  */
 public class IPUtil {
     /**
