@@ -11,8 +11,8 @@ public class Main {
         //int index = bs.getFirstIndex(arr,6);
         //int index = bs.getLastIndex(arr,6);
         //int index = bs.getFirstGreaterIndex(arr,6);
-        //int index = bs.getLessIndex(arr,10);
-        //System.out.println(index);
+        int index = bs.getLessIndex(arr,10);
+        System.out.println(index);
 
         System.out.println(IPUtil.ip2Int("123.126.22.110"));
         System.out.println(IPUtil.int2Ip(2071860846));
