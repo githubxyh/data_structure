@@ -18,7 +18,17 @@ public class Main {
         //DeleteNode dn = new DeleteNode();
         //dn.testDel();
 
-        FindMiddleNode fn = new FindMiddleNode();
-        fn.testFind();
+        //FindMiddleNode fn = new FindMiddleNode();
+        //fn.testFind();
+
+        SingleLink sl = new SingleLink();
+        sl.add(1);
+        sl.add(2);
+        sl.add(3);
+        sl.add(4);
+        sl.add(5);
+
+        sl.delete(5);
+        sl.printAll();
     }
 }

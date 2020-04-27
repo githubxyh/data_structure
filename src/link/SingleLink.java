@@ -16,6 +16,28 @@ public class SingleLink {
         temp.next = new Node(data);
     }
 
+    public void delete(int data) {
+        if(header == null) {
+            return;
+        }
+        if(header.data == data){
+            header = header.next;
+            return;
+        }
+
+        Node pre = null;
+        Node temp = header;
+
+        while (temp.next != null){
+            pre = temp;
+            temp = temp.next;
+            if(temp.data == data) {
+                pre.next = temp.next;
+                return;
+            }
+        };
+    }
+
     public void printAll(){
         printAll(this.header);
     }
