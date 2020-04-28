@@ -21,14 +21,31 @@ public class Main {
         //FindMiddleNode fn = new FindMiddleNode();
         //fn.testFind();
 
+        /*
         SingleLink sl = new SingleLink();
         sl.add(1);
         sl.add(2);
         sl.add(3);
         sl.add(4);
         sl.add(5);
-
+        //删除
         sl.delete(5);
         sl.printAll();
+        */
+
+        /*
+        //测试LRU
+        LRULink lru = new LRULink();
+        lru.get(1);
+        lru.get(2);
+        lru.get(3);
+        lru.get(4);
+        lru.get(5);
+        lru.get(6);
+        lru.get(7);
+        lru.get(8);
+        System.out.println("####");
+        lru.printAll(lru.header);
+        */
     }
 }
