@@ -1,5 +1,9 @@
 package backtrack;
 
+/**
+ * 我们可以把物品依次排列，整个问题就分解为了 n 个阶段，每个阶段对应一个物品怎么选择。
+ * 先对第一个物品进行处理，选择装进去或者不装进去，然后再递归地处理剩下的物品。
+ */
 public class Pack {
 
     public static void main(String[] args) {
