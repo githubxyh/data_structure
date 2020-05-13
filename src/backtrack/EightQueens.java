@@ -15,6 +15,7 @@ public class EightQueens {
             printQueens(position);
             return;
         }
+        //每第一行的8种放法。
         for(int column=0; column < 8; column++) {
             if(isOk(row,column)) {
                 position[row] = column;
