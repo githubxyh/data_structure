@@ -24,16 +24,16 @@ public class Reverse {
     //2134
     //4321
     public void reverse1(SingleLink sl){
-        Node head = sl.header;
-        Node prev = null;
-        Node current = null;
-        while(head != null) {
-            current = head;
-            head = head.next;
-            current.next = prev;
-            prev = current;
+        Node head1 = sl.header;
+        Node head2 = null;
+        Node temp = null ;
+        while(head1 != null) {
+            temp = head1;
+            head1 = head1.next;
+            temp.next = head2;
+            head2 = temp;
         }
-        sl.header = current;
+        sl.header = temp;
     }
 
     //递归反转
@@ -52,5 +52,18 @@ public class Reverse {
     public void reverse2(SingleLink sl){
         Node head = sl.header;
         sl.header = reverseList(head);
+    }
+
+    public void reverse3(SingleLink sl){
+        Node head = sl.header;
+        Node current = null;
+        Node pre = null;
+
+        while (head != null) {
+            current = head;
+            head = head.next;
+            pre.next = head;
+            current = current.next;
+        }
     }
 }
